@@ -360,6 +360,12 @@ define( [
 
             setTimeout(function(){
                 jQuery( '#merge-tags-box' ).find( '.merge-tag-filter' ).find( 'input' ).focus();
+
+                // Scroll the drawe down by the height of the merge tag box.
+                // jQuery( '#nf-drawer' ).css( 'padding-bottom', '360px' );
+                console.log( jQuery( '#nf-drawer' ).scrollTop );
+                jQuery( '#nf-drawer' ).scrollTop += 20;
+                console.log( jQuery( '#nf-drawer' ).scrollTop );
             }, 500 );
         },
 
