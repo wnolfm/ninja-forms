@@ -35,7 +35,7 @@ define([], function() {
 				maskPlaceholder = maskPlaceholder.replace( /\*/g, '_' );
 			}
 
-			if ( ! jQuery.trim( currentValue ) || currentValue == maskPlaceholder ) {
+			if ( ! jQuery.trim( currentValue ) || currentValue != maskPlaceholder ) {
 				defaultReqValidation = false;
 			}
 
